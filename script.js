@@ -7,7 +7,9 @@ const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 const setTheme = (theme) => {
   body.dataset.theme = theme;
   if (toggleButton) {
-    toggleButton.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+    const isDark = theme === 'dark';
+    toggleButton.textContent = isDark ? '☀' : '☾';
+    toggleButton.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
   }
 };
 
