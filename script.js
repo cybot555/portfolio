@@ -1,5 +1,47 @@
-const toggleButton = document.getElementById('theme-toggle');
 const body = document.body;
-toggleButton.addEventListener('click', () => {
-    body.classList.toggle('dark');
+body.classList.add('js-enabled');
+
+const toggleButton = document.getElementById('theme-toggle');
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+const setTheme = (theme) => {
+  body.dataset.theme = theme;
+  if (toggleButton) {
+    toggleButton.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+  }
+};
+
+const stored = localStorage.getItem('theme');
+const initial = stored || (prefersDark.matches ? 'dark' : 'light');
+setTheme(initial);
+
+if (toggleButton) {
+  toggleButton.addEventListener('click', () => {
+    const next = body.dataset.theme === 'light' ? 'dark' : 'light';
+    setTheme(next);
+    localStorage.setItem('theme', next);
+  });
+}
+
+prefersDark.addEventListener('change', (event) => {
+  if (!localStorage.getItem('theme')) {
+    setTheme(event.matches ? 'dark' : 'light');
+  }
 });
+
+const revealEls = document.querySelectorAll('.reveal');
+
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  revealEls.forEach((el) => observer.observe(el));
+} else {
+  revealEls.forEach((el) => el.classList.add('visible'));
+}

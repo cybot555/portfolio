@@ -1,34 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Student Portfolio</title>
-      <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
-      <header>
-         <h1 id="name">Cyrus Glenn L. Digal</h1>
-         <img src="profile.png" alt="Profile Picture" id="profile-img">
-         <p id="course-year">Bachelor of Science in Computer Science - 2nd Year</p>
-         <button id="theme-toggle">Switch Theme</button>
-      </header>
-      <section id="achievements">
-         <h2>Achievements/Certifications</h2>
-         <ul>
-            <li>Certified IT Specialist - Java (Certiport) </li>
-            <li>Consistent Dean's Lister Y1-Y2 1T</li>
-            <li>Consistent With High Honors </li>
-         </ul>
-      </section>
-      <section id="projects">
-         <h2>Previous Projects</h2>
-         <ul>
-            <li>HITS: An MMCM Campus-Based Ridesharing App</li>
-            <li>Windows File Paths Tokenizer</li>
-            <li>Rental Management System Application in Java</li>
-         </ul>
-      </section>
-      <script src="script.js"></script>
-   </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyrus Digal | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">CG</div>
+      <div class="brand-text">
+        <span class="eyebrow">Portfolio</span>
+        <strong>Cyrus Glenn L. Digal</strong>
+      </div>
+    </div>
+    <button id="theme-toggle" type="button" aria-label="Toggle theme">Dark mode</button>
+  </header>
+
+  <main>
+    <section class="hero section reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">Computer Science Student</p>
+        <h1>Cyrus Glenn L. Digal</h1>
+        <p class="subtitle">Bachelor of Science in Computer Science – 2nd Year</p>
+        <p class="tagline">Building, learning, creating.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#projects">View Projects</a>
+          <a class="ghost" href="#achievements">Achievements</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-shell">
+          <img src="assets/profile.png" alt="Profile photo of Cyrus Glenn L. Digal" class="avatar">
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="section reveal">
+      <div class="section-header">
+        <p class="eyebrow">Highlights</p>
+        <h2>Achievements</h2>
+        <p class="muted">Milestones that reflect discipline and consistency.</p>
+      </div>
+      <div class="card-grid achievements">
+        <article class="card">
+          <div class="icon-dot" aria-hidden="true"></div>
+          <div class="card-body">
+            <h3>Certified IT Specialist – Java</h3>
+            <p>Certiport certification showcasing strong Java fundamentals.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="icon-dot" aria-hidden="true"></div>
+          <div class="card-body">
+            <h3>Consistent Dean’s Lister Y1–Y2 T1</h3>
+            <p>Sustained academic performance through rigorous coursework.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="icon-dot" aria-hidden="true"></div>
+          <div class="card-body">
+            <h3>Consistent With High Honors</h3>
+            <p>Committed to excellence in both theory and practice.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="section-header">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Projects</h2>
+        <p class="muted">Practical builds that explore systems, UX, and tooling.</p>
+      </div>
+      <div class="card-grid projects">
+        <article class="project-card card">
+          <div class="thumb gradient-blue">
+            <span class="thumb-label">Mobile</span>
+            <span class="thumb-icon" aria-hidden="true">↗</span>
+          </div>
+          <div class="card-body">
+            <h3>HITS: MMCM Campus-Based Ridesharing App</h3>
+            <p>Safe campus-first ridesharing with queue logic and intuitive flows.</p>
+            <button class="ghost" type="button">View project</button>
+          </div>
+        </article>
+
+        <article class="project-card card">
+          <div class="thumb gradient-indigo">
+            <span class="thumb-label">CLI</span>
+            <span class="thumb-icon" aria-hidden="true">⌘</span>
+          </div>
+          <div class="card-body">
+            <h3>Windows File Paths Tokenizer</h3>
+            <p>Tokenizer that parses and analyzes complex Windows paths cleanly.</p>
+            <button class="ghost" type="button">View project</button>
+          </div>
+        </article>
+
+        <article class="project-card card">
+          <div class="thumb gradient-cyan">
+            <span class="thumb-label">Java</span>
+            <span class="thumb-icon" aria-hidden="true">⌁</span>
+          </div>
+          <div class="card-body">
+            <h3>Rental Management System in Java</h3>
+            <p>End-to-end rental dashboard with inventory, billing, and reports.</p>
+            <button class="ghost" type="button">View project</button>
+          </div>
+        </article>
+
+        <article class="project-card card">
+          <div class="thumb image-thumb">
+            <span class="thumb-label">Healthtech</span>
+            <img src="assets/strokesense.png" alt="StrokeSense thumbnail">
+          </div>
+          <div class="card-body">
+            <h3>StrokeSense</h3>
+            <p>Early stroke risk visuals with streamlined dashboards and clarity.</p>
+            <button class="ghost" type="button">View project</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="muted">© 2025 Cyrus Glenn L. Digal — Let’s build thoughtful products.</p>
+    <div class="footer-links">
+      <a href="mailto:hello@cyrusdigal.dev">Email</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
