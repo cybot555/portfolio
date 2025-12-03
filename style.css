@@ -119,6 +119,11 @@ main { max-width: 1180px; margin: 0 auto; padding-top: 40px; }
 }
 
 .ghost:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12); }
+.project-cta {
+  align-self: flex-end;
+  margin-top: auto;
+  padding-inline: 14px;
+}
 
 .hero-visual { display: grid; place-items: center; }
 .hero-visual { justify-self: end; }
@@ -162,6 +167,10 @@ main { max-width: 1180px; margin: 0 auto; padding-top: 40px; }
   gap: 18px;
 }
 
+.projects .card-grid {
+  grid-auto-rows: 1fr;
+}
+
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -174,7 +183,13 @@ main { max-width: 1180px; margin: 0 auto; padding-top: 40px; }
 
 .card:hover { transform: translateY(-6px); box-shadow: 0 22px 60px rgba(15, 23, 42, 0.14); border-color: rgba(79, 139, 255, 0.35); }
 
-.card-body h3 { margin: 6px 0 8px; letter-spacing: -0.01em; }
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+.card-body h3 { margin: 6px 0 0; letter-spacing: -0.01em; }
 .card-body p { margin: 0; color: var(--muted); }
 
 .icon-dot {
@@ -185,7 +200,12 @@ main { max-width: 1180px; margin: 0 auto; padding-top: 40px; }
   box-shadow: 0 0 0 6px rgba(79, 139, 255, 0.12);
 }
 
-.projects .project-card { display: grid; grid-template-rows: auto 1fr; gap: 12px; }
+.projects .project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+}
 
 .thumb {
   position: relative;
