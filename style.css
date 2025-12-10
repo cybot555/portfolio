@@ -236,6 +236,7 @@ main { max-width: 1180px; margin: 0 auto; padding-top: 40px; }
 .gradient-blue { background: linear-gradient(135deg, #d7e5ff, #eff5ff); }
 .gradient-indigo { background: linear-gradient(135deg, #e5dfff, #f3f0ff); }
 .gradient-cyan { background: linear-gradient(135deg, #d6f6ff, #effdff); }
+.gradient-sunset { background: linear-gradient(135deg, #ffe7d9, #fff4ec); }
 
 .image-thumb { background: #dfe6ef; }
 .image-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
