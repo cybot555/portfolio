@@ -1,0 +1,9 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Award info/award received: Best Machine Learning Model\
+Reflecting on my journey, I’ve realized that success is a collective effort. As the developer of the app, I couldn’t have achieved this without the invaluable guidance of my co-members, especially our leader. We learned the importance of leveraging our individual strengths to reach a common goal. Initially, the project was intimidating due to its ambitious nature and high cost. However, by staying disciplined and not letting negativities get in the way, we persevered. It was a very stressful experience, but I always believed that it shall come to pass. Our hard work paid off with a remarkable presentation and a machine learning model award, which eased the burden and validated our efforts.
